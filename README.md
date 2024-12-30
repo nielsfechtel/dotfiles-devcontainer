@@ -7,8 +7,8 @@
 \_| \_/_|\___|_|___/            \__,_|\___/ \__|_| |_|_|\___||___/
 ```
 # My dotfiles
-Slimmed down version of my dotfiles for use in devpods. 
+Slimmed down version of [my dotfiles](https://github.com/nielsfechtel/dotfiles) for use in devpods. 
 ## Installation
 See the install-script. 
 ### Credits
-- See credits in dotfiles
+- See credits in [dotfiles](https://github.com/nielsfechtel/dotfiles)
