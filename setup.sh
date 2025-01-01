@@ -19,6 +19,7 @@ packages=(
   k9s
   kubectx
   direnv
+  tmux
 )
 
 # Iterate over the array and install each package
