@@ -20,6 +20,8 @@ packages=(
   kubectx
   direnv
   tmux
+  # needed for the build of telescope-fzf-native.nvim
+  cmake
 )
 
 # Iterate over the array and install each package
