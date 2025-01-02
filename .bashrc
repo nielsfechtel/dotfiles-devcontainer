@@ -81,5 +81,7 @@ eval "$(fzf --bash)"
 # add alias for opening in nvim
 alias vf='fzf --bind "enter:become(nvim {})"'
 
+eval "$(direnv hook bash)"
+
 # last step: Starship
 eval "$(starship init bash)"
