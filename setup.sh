@@ -14,6 +14,7 @@ packages=(
   ripgrep
   npm
   lazygit
+  starship
   fzf
   kubectl
   fluxcd/tap/flux
