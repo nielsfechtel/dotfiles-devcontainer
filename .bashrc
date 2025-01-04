@@ -83,5 +83,7 @@ alias vf='fzf --bind "enter:become(nvim {})"'
 
 eval "$(direnv hook bash)"
 
+command -v flux >/dev/null && . <(flux completion bash)
+
 # last step: Starship
 eval "$(starship init bash)"
