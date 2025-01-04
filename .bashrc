@@ -7,7 +7,7 @@
 
 export VISUAL=nvim
 export EDITOR=nvim
-export TERM=screen-256color
+export TERM=tmux-256color
 
 export HISTFILE=~/.histfile
 export HISTSIZE=25000
