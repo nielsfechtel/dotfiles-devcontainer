@@ -22,6 +22,8 @@ packages=(
   k9s
   kubectx
   direnv
+  sops
+  age
   tmux
   # needed for the build of telescope-fzf-native.nvim
   cmake
