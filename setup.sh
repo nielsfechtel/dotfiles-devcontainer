@@ -15,6 +15,7 @@ packages=(
   ripgrep
   npm
   lazygit
+  lazydocker
   starship
   fzf
   kubectl
