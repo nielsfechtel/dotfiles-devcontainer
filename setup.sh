@@ -8,7 +8,7 @@ ln -sf "$PWD/nvim" "$XDG_CONFIG_HOME"/nvim
 ln -sf "$PWD/.inputrc" "$HOME"/.inputrc
 ln -sf "$PWD/.tmux.conf" "$HOME"/.tmux.conf
 ln -sf "$PWD/.bashrc" "$HOME"/.bashrc
-ln -sf "$PWD/.starship.toml" "$HOME"/.starship.toml
+ln -sf "$PWD/starship.toml" "$XDG_CONFIG_HOME"/starship.toml
 
 packages=(
   fd
