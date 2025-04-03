@@ -18,16 +18,9 @@ packages=(
   lazydocker
   starship
   fzf
-  kubectl
-  fluxcd/tap/flux
-  k9s
-  kubectx
-  direnv
-  sops
-  age
   tmux
   # needed for the build of telescope-fzf-native.nvim
-  cmake
+  make
 )
 
 # Iterate over the array and install each package
