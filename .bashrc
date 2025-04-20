@@ -9,6 +9,10 @@ export VISUAL=nvim
 export EDITOR=nvim
 export TERM=tmux-256color
 
+# These need to be set for some tools like tmux
+export LANG=en_US.utf8
+export LC_ALL=en_US.utf8
+
 export HISTFILE=~/.histfile
 export HISTSIZE=25000
 export SAVEHIST=25000
