@@ -74,7 +74,7 @@ function glol() { git log --graph --decorate --pretty=oneline --abbrev-commit; }
 function glola() { git log --graph --decorate --pretty=oneline --abbrev-commit --all; }
 
 # kubernetes
-source <(kubectl completion bash)
+command -v kubectl >/dev/null && source <(kubectl completion bash)
 alias k=kubectl
 complete -o default -F __start_kubectl k
 alias kgp='k get pods'
@@ -88,7 +88,7 @@ eval "$(fzf --bash)"
 # add alias for opening in nvim
 alias vf='fzf --bind "enter:become(nvim {})"'
 
-eval "$(direnv hook bash)"
+command -v direnv >/dev/null && eval "$(direnv hook bash)"
 
 command -v flux >/dev/null && . <(flux completion bash)
 command -v devpod >/dev/null && . <(devpod completion bash)
