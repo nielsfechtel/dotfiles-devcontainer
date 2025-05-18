@@ -1,7 +1,3 @@
-#
-# ~/.bashrc
-#
-
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -82,7 +78,7 @@ alias kgd='k get deployments'
 alias kgn='k get namespaces'
 alias kgv='k get persistentvolumeclaims'
 
-# fzf 
+# fzf
 # (register shell integration like using fzf for Ctrl+r, etc.)
 eval "$(fzf --bash)"
 # add alias for opening in nvim
