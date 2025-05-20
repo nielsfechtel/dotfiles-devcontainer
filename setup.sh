@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Initialize and update submodules
+git submodule init
+git submodule update
+
 export XDG_CONFIG_HOME="$HOME"/.config
 mkdir -p "$XDG_CONFIG_HOME"
 
