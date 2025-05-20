@@ -1,19 +1,6 @@
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
-export VISUAL=nvim
-export EDITOR=nvim
-export TERM=tmux-256color
-
-# These need to be set for some tools like tmux
-export LANG=en_US.utf8
-export LC_ALL=en_US.utf8
-
-export HISTFILE=~/.histfile
-export HISTSIZE=25000
-export SAVEHIST=25000
-export HISTCONTROL=ignorespace
-
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
@@ -22,14 +9,18 @@ PS1='[\u@\h \W]\$ '
 set -o vi
 bind -x '"\C-l":clear'
 
-# Make aliases work with sudo, from askubuntu.com/questions/22037
-# "Bash only checks the first word of a command for an alias. [...] We can tell bash to check
-# the next word after the alias (i.e. sudo) by adding a space at the end of the alias value"
-# Note that this breaks if using a flag for sudo; there are other longer solutions in the same question.
-alias sudo='sudo '
+# Make sure LANG and LC_C are set - some tools like tmux
+# need it in nested sessions for using e.g. powerline-glyphs
+export LANG=en_US.utf8
+export LC_ALL=en_US.utf8
 
-# fzf with preview
-alias fzfp='fzf --preview "bat --color=always --style=numbers --line-range=:500 {}"'
+# History longer
+export HISTFILE=~/.histfile
+export HISTSIZE=25000
+export SAVEHIST=25000
+export HISTCONTROL=ignorespace
+
+alias sudo='sudo '
 
 # basic aliases
 alias ls='ls -l --color=auto'
@@ -37,6 +28,8 @@ alias ll='ls -la'
 # also sort by time (-t), human-readable units (-h), reverse order (-r)
 alias la='ls -lathr'
 
+export EDITOR=nvim
+export VISUAL=nvim
 alias v='nvim'
 alias t='tmux'
 
@@ -51,9 +44,6 @@ alias ln='ln -i'
 alias chown='chown --preserve-root'
 alias chmod='chmod --preserve-root'
 alias chgrp='chgrp --preserve-root'
-
-# docker
-alias lzd='lazydocker'
 
 # git
 alias lz='lazygit'
@@ -78,14 +68,7 @@ alias kgd='k get deployments'
 alias kgn='k get namespaces'
 alias kgv='k get persistentvolumeclaims'
 
-# fzf
-# (register shell integration like using fzf for Ctrl+r, etc.)
-eval "$(fzf --bash)"
-# add alias for opening in nvim
-alias vf='fzf --bind "enter:become(nvim {})"'
-
 command -v direnv >/dev/null && eval "$(direnv hook bash)"
-
 command -v flux >/dev/null && . <(flux completion bash)
 command -v devpod >/dev/null && . <(devpod completion bash)
 
