@@ -18,6 +18,7 @@ ln -sf "$PWD/.bashrc" "$HOME"/.bashrc
 packages=(
   starship
   lazygit
+  fzf
   tmux
 )
 
