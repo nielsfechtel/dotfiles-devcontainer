@@ -34,7 +34,7 @@ alias v='nvim'
 alias t='tmux'
 
 alias ..='cd ..'
-alias ...='cd ../../../'
+alias ...='cd ../../'
 # do not delete / or prompt if deleting more than 3 files at a time
 alias rm='rm -I --preserve-root'
 # confirmation
