@@ -19,6 +19,8 @@ packages=(
   starship
   lazygit
   fzf
+  fd
+  ripgrep
   make
   cmake
   tmux
