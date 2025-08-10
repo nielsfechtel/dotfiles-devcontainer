@@ -68,6 +68,8 @@ alias kgd='k get deployments'
 alias kgn='k get namespaces'
 alias kgv='k get persistentvolumeclaims'
 
+export TERM=xterm-256color
+
 command -v direnv >/dev/null && eval "$(direnv hook bash)"
 command -v flux >/dev/null && . <(flux completion bash)
 command -v devpod >/dev/null && . <(devpod completion bash)
