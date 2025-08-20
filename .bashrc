@@ -14,11 +14,10 @@ bind -x '"\C-l":clear'
 export LANG=en_US.utf8
 export LC_ALL=en_US.utf8
 
-# History longer
-export HISTFILE=~/.histfile
-export HISTSIZE=25000
-export SAVEHIST=25000
+# History - longer, dont' save commands with a space in front, add timestamps to history
+export HISTFILESIZE=25000
 export HISTCONTROL=ignorespace
+export HISTTIMEFORMAT="[%Y-%m-%d %H:%M:%S %Z] "
 
 alias sudo='sudo '
 
